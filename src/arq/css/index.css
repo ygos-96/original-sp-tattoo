@@ -84,8 +84,8 @@
 
 @media (max-width: 600px) {
   .conteudo-sobre-nos {
-    paddingwidth: 400px;
-
+    width: 400px;
+  }
   .servicos-conteudo {
     height: 120px;
     background-size: cover;
@@ -105,6 +105,11 @@
     display: flex !important;
     width: 100% !important;
   }
+
+  .mapas iframe{
+    width: 100%;
+    height: 250px;
+}
 }
 
 @media (max-width:400px) {
