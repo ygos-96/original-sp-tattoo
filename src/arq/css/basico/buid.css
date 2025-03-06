@@ -11,6 +11,7 @@
   --back-btn-principal: #ffff;
   --btn-cor-texto-principal: #000000;
   --back-btn-secundario: #ff0000;
+  --btn-cor-texto-secundario: #ffff
 }
 @font-face {
   font-family: 'Bebas';
@@ -45,16 +46,23 @@
   font-family: var(--fonte-titulo);
   font-size: var(--titulo-card);
 }
-
-.btn-principal {
+.btn-principal{
   background-color: var(--back-btn-principal);
   color: var(--btn-cor-texto-principal);
+}
+.btn-principal,
+.btn-secundario {
   max-width: 300px;
   width: 245px;
   height: 45px;
   border-radius: 8px;
   font-weight: bold;
-  cursor: pointer
+  cursor: pointer;
+}
+
+.btn-secundario {
+  background-color: var(--back-btn-secundario);
+  color: var(--btn-cor-texto-secundario);
 }
 
 .marcacao {

@@ -51,10 +51,6 @@
         }
 
         @media (max-width:600px) {
-            main {
-                margin-bottom: 150px;
-            }
-
             .principal {
                 height: 100vh;
                 padding-bottom: 100px;
@@ -142,7 +138,7 @@
         </div>
     </header>
 
-    <main class="">
+    <main>
         <section class="principal d-flex flex-column justify-content-center align-items-center">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <img src="src/img/icones/logo-original/Logo-branco.webp" alt="Logo da Original SP Tattoo" width="500"
@@ -174,7 +170,7 @@
                         <p class="fonte-titulo fs-24 mb-0">Saiba mais</p>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-4 mb-3">
                     <img src="src/img/estudio/estudio-1.png" width="300" height="300"
                         alt="Imagem de uma parte do estúdio da Original Sp Tattoo Moema"
                         class="rounded img-fluid m-auto mb-3">
@@ -471,7 +467,25 @@
             </div>
 
         </section>
+        <section class="contato container d-flex flex-column mt-sessao mb-sessao">
+            <span class="marcacao mb-2">.</span>
+            <h2 class="ml-2 titulo-de-sessao fonte-principal mb-1">Pronto para dar vida à sua ideia?</h2>
+            <p class="subtitulo-de-sessao ml-2">Contato</p>
+            <div class="container d-flex flex-column justify-content-center align-items-center my-5">
+                <h3 class="fonte-principal titulo-de-sessao text-center col-10">Conte-nos sobre sua ideia de tatuagem e receba um orçamento personalizado hoje mesmo.</h3>
+                <button class="btn-secundario mt-4">Solicitar orçamento</button>
+            </div>
+            
+        </section>
     </main>
+
+    <footer class="container d-flex aling-items-center fonte-principal">
+        <img src="src/img/icones/logo-original/Logo-branco.webp" width="80" height="80" alt="">
+        <div class="d-flex flex-column aling-items-center justify-content-center ">
+            <p class="mb-0">2024 Todos os direitos são reservados</p>
+            <p>Contato: (11) 9 5866-8772</p>
+        </div>
+    </footer>
 
     <script>
         const filterButtons = document.querySelectorAll(".filtro-btn");
