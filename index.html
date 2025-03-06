@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bem Vindo - Original SP Tattoo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/arq/css/basico/reset.css">
+    <link rel="stylesheet" href="src/arq/css/basico/global.css">
+    <link rel="stylesheet" href="src/arq/css/basico/buid.css">
+    <link rel="stylesheet" href="src/arq/css/index.css">
+    <style>
+        .principal {
+            background-image: url(src/img/backgrounds/fundo-principal.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            height: 100vh;
+            min-height: 100%;
+            margin-top: 50px;
+        }
+
+        .principal h1 {
+            font-size: 35px;
+        }
+
+        .menu-desk {
+            position: fixed;
+            top: 0;
+            z-index: 99999;
+        }
+
+        @media (max-width:770px) {
+
+            .principal {
+                height: 50vh;
+            }
+
+            .principal h1 {
+                font-size: 18px;
+                margin-bottom: 20px !important;
+            }
+
+            .principal img {
+                max-width: 400px;
+                width: 280px;
+            }
+        }
+
+        @media (max-width:600px) {
+            main {
+                margin-bottom: 150px;
+            }
+
+            .principal {
+                height: 100vh;
+                padding-bottom: 100px;
+                margin-top: 0px;
+            }
+
+            .principal img {
+                width: 350px;
+                margin-bottom: 20px;
+            }
+
+            .principal h1 {
+                font-size: 25px;
+                margin-bottom: 30px !important;
+            }
+
+        }
+
+        @media (max-width:400px) {
+            .principal img {
+                margin-bottom: 20px;
+            }
+
+            .principal h1 {
+                font-size: 22px;
+                margin-bottom: 30px !important;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="cor-de-fundo text-light">
+    <header class="d-flex flex-column justify-content-center align-items-center p-1">
+        <nav class="menu-desk cor-de-fundo d-flex w-100">
+            <ul class="nav d-flex justify-content-center w-100 align-items-center">
+                <li class="nav-item mr-4"><img src="src/img/icones/logo-original/Logo_Branco-mob.webp" width="75"
+                        height="75" alt="Logo da Original SP Tattoo"></li>
+                <li class="nav-item "><a class="nav-link fonte-principal ml-4" href="#">Sobre Nós</a></li>
+                <li class="nav-item"><a class="nav-link fonte-principal" href="#">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link fonte-principal" href="#">Localização</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-mobile d-flex w-100 cor-de-fundo">
+            <ul class="nav position-relative d-flex w-100 align-items-center justify-content-around py-2 ">
+                <li class="nav-item d-flex flex-column justify-content-center aling-items-center">
+                    <a href="sobre-nos.html">
+                        <img src="src/img/icones/menu-mobile/estudio-de-tatuagem.png" width="30" height="30"
+                            alt="icone de um estúdio de tatuagem" class="m-auto">
+                        <span class="fs-10 fonte-principal">Sobre Nós</span>
+                    </a>
+                </li>
+                <li class="nav-item d-flex flex-column justify-content-center aling-items-center">
+                    <a href="servicos.html">
+                        <img src="src/img/icones/menu-mobile/tatuagem.png" width="30" height="30"
+                            alt="icone de uma maquina de fazer tatuagem" class="m-auto">
+                        <span class="fs-10 fonte-principal">Serviços</span>
+                    </a>
+
+                </li>
+                <li
+                    class="nav-item nav-item-centro cor-de-fundo p-1 d-flex flex-column justify-content-center aling-items-center">
+                    <a href="#home">
+                        <img src="src/img/icones/logo-original/Logo-branco.webp" width="50" height="50"
+                            alt="icone de um estúdio de tatuagem" class="m-auto">
+                    </a>
+
+                </li>
+                <li class="nav-item d-flex flex-column justify-content-center aling-items-center">
+                    <a href="localizacao.html">
+                        <img src="src/img/icones/menu-mobile/mapa.png" width="30" height="30"
+                            alt="icone de um estúdio de tatuagem" class="m-auto">
+                        <span class="fs-10 fonte-principal">Localização</span>
+                    </a>
+                </li>
+                <li class="nav-item d-flex flex-column justify-content-center aling-items-center">
+                    <a href=""></a>
+                    <img src="src/img/icones/menu-mobile/orcamentacao.png" width="30" height="30"
+                        alt="icone de um estúdio de tatuagem" class="m-auto">
+                    <span class="fs-10 fonte-principal">Orçamento</span>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main class="">
+        <section class="principal d-flex flex-column justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="src/img/icones/logo-original/Logo-branco.webp" alt="Logo da Original SP Tattoo" width="500"
+                    height="500" class="img-fluid">
+                <h1 class="fonte-principal text-white text-center mb-5">Bem-vindo à Original SP Tattoo,<br> estúdio de
+                    tatuagem em São Paulo</h1>
+                <button class="btn-principal ">Solicitar orçamento</button>
+            </div>
+        </section>
+        <section class="sobre-nos container d-flex flex-column mt-sessao mb-sessao">
+            <span class="marcacao mb-2">.</span>
+            <h2 class="ml-2 titulo-de-sessao fonte-principal mb-1">Original SP Tattoo: Excelência em Tatuagem
+                Realista e Experiências Exclusivas</h2>
+            <p class="subtitulo-de-sessao ml-2">Sobre Nós</p>
+            <div class="conteudo-sobre-nos w-100 d-flex my-4">
+                <div class="d-flex flex-column col-8">
+                    <p class="col-lg-10 px-0 mb-5 me-3">
+                        Na Original SP Tattoo, localizada na Grande São Paulo, nossos especialistas em realismo
+                        utilizam materiais de alta qualidade para criar a tatuagem perfeita. Com estúdios em Taboão
+                        da Serra e Moema, oferecemos fácil acesso e um ambiente acolhedor que segue rigorosas normas
+                        de higiene. Nossa equipe plural, multipremiada e versátil atende a todos os estilos de
+                        tatuagem, desde fine line até grandes peças coloridas. Também oferecemos serviços exclusivos
+                        como tatuagem sem dor em nossa clínica especializada, garantindo uma experiência premium e a
+                        melhor tatuagem da sua vida. Além disso, nossos profissionais são altamente qualificados
+                        para realizar piercings seguros e estilosos. Venha nos visitar e transforme suas ideias em
+                        arte personalizada!
+                    </p>
+                    <a href="sobre-nos.html" class="saiba-mais-btn">
+                        <p class="fonte-titulo fs-24 mb-0">Saiba mais</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <img src="src/img/estudio/estudio-1.png" width="300" height="300"
+                        alt="Imagem de uma parte do estúdio da Original Sp Tattoo Moema"
+                        class="rounded img-fluid m-auto mb-3">
+                </div>
+            </div>
+
+        </section>
+        <section class="servicos mb-sessao">
+            <div class="position-relative">
+                <div class="servicos-conteudo py-3">
+                    <div class=" container d-flex flex-column">
+                        <span class="marcacao mb-2 bg-transparent">.</span>
+                        <h2 class="ml-2 titulo-de-sessao fonte-principal mb-1">Tudo que você precisa em um lugar só</h2>
+                        <p class="subtitulo-de-sessao ml-2">Serviços</p>
+                    </div>
+                </div>
+                <div class="img-servicos container justify-content-center align-items-center w-100">
+                    <div class="servico-item m-auto">
+                        <a href="piercing.html">
+                            <img src="src/img/servicos/piercing.png" width="400" height="334"
+                            alt="">
+                        </a>
+                    </div>
+                    <div class="servico-item m-auto">
+                        <a href="tatuagem-indolor.html">
+                            <img src="src/img/servicos/clinica.png" width="400" height="334"
+                            alt="">
+                        </a></div>
+                    <div class="servico-item m-auto">
+                        <a href="realismo.html">
+                            <img src="src/img/servicos/realismo.png" width="400" height="334"
+                            alt="">
+                        </a></div>
+                    <div class="servico-item m-auto">
+                        <a href="cobertura.html">
+                            <img src="src/img/servicos/cobertura.png" width="400" height="334"
+                            alt="">
+                        </a></div>
+                </div>
+            </div>
+        </section>
+        <section class="artistas container d-flex flex-column mt-sessao mb-sessao">
+            <span class="marcacao mb-2">.</span>
+            <h2 class="ml-2 titulo-de-sessao fonte-principal mb-1">Conheça nossos artistas</h2>
+            <p class="subtitulo-de-sessao ml-2">Artistas</p>
+            <div class="conteudo-artistas-desk">
+                <div class="menu-artistas d-flex justify-content-center my-5">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button class="list-inline-item text-white filtro-btn" data-category="all">Todos</button>
+                        <button class="list-inline-item text-white filtro-btn"
+                            data-category="tatuador">Tatuadores</button>
+                        <button class="list-inline-item text-white filtro-btn" data-category="body-piercer">Body
+                            Piercer</button>
+                    </div>
+                </div>
+                <div id="funcionarios" class="funcionarios justify-content-center align-items-center m-auto">
+                    <a href="tuzinho.html" class="d-flex justify-content-center align-items-center">
+                        <div class="card-artista p-3 artista tatuador flex-column">
+                            <img src="src/img/artistas/tuzinho.png" class="mb-2" width="250" height="188" alt="">
+                            <h3 class="titulo-card">Tuzinho</h3>
+                            <p class="fonte-card fs-16">Com uma carreira de quase 30 anos, Anderson Almeida conhecido
+                                popularmente como Tuzinho Tattoo é tatuador, youtuber e empresário ....</p>
+                            <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                        </div>
+                    </a>
+                    <a href="victor.html" class="d-flex justify-content-center align-items-center">
+                        <div class="card-artista p-3 artista tatuador flex-column">
+                            <img src="src/img/artistas/victor.png" class="mb-2" width="250" height="188" alt="">
+                            <h3 class="titulo-card">Victor</h3>
+                            <p class="fonte-card fs-16">Sou o Victor, tenho 23 anos e desde os 20 sou tatuador. Sou
+                                especializado em realismo tanto preto e cinza quanto colorido....</p>
+                            <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                        </div>
+                    </a>
+                    <a href="rodrigo.html" class="d-flex justify-content-center align-items-center ">
+                        <div class="card-artista p-3 artista tatuador flex-column">
+                            <img src="src/img/artistas/rodrigo.png" class="mb-2" width="250" height="188" alt="">
+                            <h3 class="titulo-card">Rodrigo</h3>
+                            <p class="fonte-card fs-16">Sou o Rodrigo, tatuo há 1 ano e me aperfeiçoei nas técnicas de
+                                rastelado, neo tradicional, oriental, fine line e floral....</p>
+                            <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                        </div>
+                    </a>
+                    <a href="vitor.html" class="d-flex justify-content-center align-items-center ">
+                        <div class="card-artista p-3 artista tatuador flex-column">
+                            <img src="src/img/artistas/vitor.png" class="mb-2" width="250" height="188" alt="">
+                            <h3 class="titulo-card">Vitor</h3>
+                            <p class="fonte-card fs-16">Minha trajetória como tatuador começou há quatro anos com
+                                designs simples, evoluindo para o realismo. Conquistei o primeiro lugar na competição...
+                            </p>
+                            <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                        </div>
+                    </a>
+                    <a href="gabriel.html" class="d-flex justify-content-center align-items-center ">
+                        <div class="card-artista p-3 artista tatuador flex-column">
+                            <img src="src/img/artistas/Gabriel.png" class="mb-2" width="250" height="188" alt="">
+                            <h3 class="titulo-card">Gabriel</h3>
+                            <p class="fonte-card fs-16">Minha carreira começou com traços simples e designs básicos, com
+                                quase 3 anos de carreira pude me aperfeiçoar e assim...</p>
+                            <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                        </div>
+                    </a>
+                    <a href="junior.html" class="d-flex justify-content-center align-items-center ">
+                        <div class="card-artista p-3 artista tatuador flex-column">
+                            <img src="src/img/artistas/junior.png" class="mb-2" width="250" height="188" alt="">
+                            <h3 class="titulo-card">Junior</h3>
+                            <p class="fonte-card fs-16">Minha trajetória na tatuagem começou há sete anos, com traços
+                                simples e desenhos básicos. Ao longo do tempo, minha paixão e dedicação me....</p>
+                            <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                        </div>
+                    </a>
+                    <a href="igor.html" class="d-flex justify-content-center align-items-center ">
+                        <div class="card-artista p-3 artista tatuador flex-column">
+                            <img src="src/img/artistas/igor.png" class="mb-2" width="250" height="188" alt="">
+                            <h3 class="titulo-card">Igor</h3>
+                            <p class="fonte-card fs-16">Minha trajetória na tatuagem começou há nove anos, iniciando com
+                                traços simples e designs básicos. Ao longo do tempo...</p>
+                            <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                        </div>
+                    </a>
+                    <a href="arthur.html" class="d-flex justify-content-center align-items-center ">
+                        <div class="card-artista p-3 artista tatuador flex-column">
+                            <img src="src/img/artistas/arthur.png" class="mb-2" width="250" height="188" alt="">
+                            <h3 class="titulo-card">Arthur</h3>
+                            <p class="fonte-card fs-16">Sou o Arthur, tenho 19 anos, sou especializado na área do
+                                realismo preto e cinza e em trabalhos do estilo old school...</p>
+                            <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                        </div>
+                    </a>
+                    <a href="jeice.html" class="d-flex justify-content-center align-items-center ">
+                        <div class="card-artista p-3 artista body-piercer flex-column">
+                            <img src="src/img/artistas/jeice.png" class="mb-2" width="250" height="188" alt="">
+                            <h3 class="titulo-card">Jeice</h3>
+                            <p class="fonte-card fs-16">Olá! Sou Jeice, bodypiercer com sete anos de experiência. Minha
+                                dedicação ao piercing me permite oferecer....</p>
+                            <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="conteudo-artistas-mobile d-flex justify-content-center align-items-center mt-5">
+                <div id="carouselExampleControls" class="carousel slide w-100 mb-5" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="tuzinho.html" class="d-flex justify-content-center align-items-center">
+                                <div class="card-artista p-3 artista tatuador flex-column">
+                                    <img src="src/img/artistas/tuzinho.png" class="mb-2" width="250" height="188"
+                                        alt="">
+                                    <h3 class="titulo-card">Tuzinho</h3>
+                                    <p class="fonte-card fs-16">Com uma carreira de quase 30 anos, Anderson Almeida
+                                        conhecido popularmente como Tuzinho Tattoo é tatuador, youtuber e empresário
+                                        ....</p>
+                                    <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="victor.html" class="d-flex justify-content-center align-items-center">
+                                <div class="card-artista p-3 artista tatuador flex-column">
+                                    <img src="src/img/artistas/victor.png" class="mb-2" width="250" height="188" alt="">
+                                    <h3 class="titulo-card">Victor</h3>
+                                    <p class="fonte-card fs-16">Sou o Victor, tenho 23 anos e desde os 20 sou tatuador.
+                                        Sou especializado em realismo tanto preto e cinza quanto colorido....</p>
+                                    <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="rodrigo.html" class="d-flex justify-content-center align-items-center ">
+                                <div class="card-artista p-3 artista tatuador flex-column">
+                                    <img src="src/img/artistas/rodrigo.png" class="mb-2" width="250" height="188"
+                                        alt="">
+                                    <h3 class="titulo-card">Rodrigo</h3>
+                                    <p class="fonte-card fs-16">Sou o Rodrigo, tatuo há 1 ano e me aperfeiçoei nas
+                                        técnicas de rastelado, neo tradicional, oriental, fine line e floral....</p>
+                                    <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="vitor.html" class="d-flex justify-content-center align-items-center ">
+                                <div class="card-artista p-3 artista tatuador flex-column">
+                                    <img src="src/img/artistas/vitor.png" class="mb-2" width="250" height="188" alt="">
+                                    <h3 class="titulo-card">Vitor</h3>
+                                    <p class="fonte-card fs-16">Minha trajetória como tatuador começou há quatro anos
+                                        com designs simples, evoluindo para o realismo. Conquistei o primeiro lugar na
+                                        competição...</p>
+                                    <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="gabriel.html" class="d-flex justify-content-center align-items-center ">
+                                <div class="card-artista p-3 artista tatuador flex-column">
+                                    <img src="src/img/artistas/Gabriel.png" class="mb-2" width="250" height="188"
+                                        alt="">
+                                    <h3 class="titulo-card">Gabriel</h3>
+                                    <p class="fonte-card fs-16">Minha carreira começou com traços simples e designs
+                                        básicos, com quase 3 anos de carreira pude me aperfeiçoar e assim...</p>
+                                    <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="junior.html" class="d-flex justify-content-center align-items-center ">
+                                <div class="card-artista p-3 artista tatuador flex-column">
+                                    <img src="src/img/artistas/junior.png" class="mb-2" width="250" height="188" alt="">
+                                    <h3 class="titulo-card">Junior</h3>
+                                    <p class="fonte-card fs-16">Minha trajetória na tatuagem começou há sete anos, com
+                                        traços simples e desenhos básicos. Ao longo do tempo, minha paixão e dedicação
+                                        me....</p>
+                                    <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="igor.html" class="d-flex justify-content-center align-items-center ">
+                                <div class="card-artista p-3 artista tatuador flex-column">
+                                    <img src="src/img/artistas/igor.png" class="mb-2" width="250" height="188" alt="">
+                                    <h3 class="titulo-card">Igor</h3>
+                                    <p class="fonte-card fs-16">Minha trajetória na tatuagem começou há nove anos,
+                                        iniciando com traços simples e designs básicos. Ao longo do tempo...</p>
+                                    <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="arthur.html" class="d-flex justify-content-center align-items-center ">
+                                <div class="card-artista p-3 artista tatuador flex-column">
+                                    <img src="src/img/artistas/arthur.png" class="mb-2" width="250" height="188" alt="">
+                                    <h3 class="titulo-card">Arthur</h3>
+                                    <p class="fonte-card fs-16">Sou o Arthur, tenho 19 anos, sou especializado na área
+                                        do realismo preto e cinza e em trabalhos do estilo old school...</p>
+                                    <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="jeice.html" class="d-flex justify-content-center align-items-center ">
+                                <div class="card-artista p-3 artista body-piercer flex-column">
+                                    <img src="src/img/artistas/jeice.png" class="mb-2" width="250" height="188" alt="">
+                                    <h3 class="titulo-card">Jeice</h3>
+                                    <p class="fonte-card fs-16">Olá! Sou Jeice, bodypiercer com sete anos de
+                                        experiência. Minha dedicação ao piercing me permite oferecer....</p>
+                                    <span class="fonte-card fs-24 text-decoration-underline">Saiba +</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="localizacao container d-flex flex-column mt-sessao mb-sessao">
+            <span class="marcacao mb-2">.</span>
+            <h2 class="ml-2 titulo-de-sessao fonte-principal mb-1">Venha nos conhecer</h2>
+            <p class="subtitulo-de-sessao ml-2">Localização</p>
+            <div class="conteudo-localização d-flex flex-column align-items-center my-4 fonte-principal">
+                <h2 class="titulo-de-sessao fonte-principal mb-3">Atendimento de Excelência em Moema e Taboão da Serra
+                </h2>
+                <p class="col-10 fs-18">
+                    À frente do estúdio está Tuzinho Tattoo, um dos tatuadores mais renomados do país. Com mais de 30
+                    anos de experiência, Tuzinho se especializou no realismo e em técnicas avançadas de tatuagem, sendo
+                    reconhecido por seu talento e precisão. Sua trajetória inclui a conquista de inúmeros prêmios em
+                    convenções ao redor do mundo, além de ter formado milhares de tatuadores através da Tuzinho Academy,
+                    sua plataforma de ensino dedicada ao aprimoramento da arte da tatuagem
+                </p>
+            </div>
+            <div class="mapas w-100">
+                <div class="d-flex justify-content-center align-items-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.9168604920997!2d-46.757546323624325!3d-23.60731446328406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5422594915c7%3A0x7cee5b68e4ffdc5c!2sOriginal%20SP%20Tattoo%20Tabo%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1718119657566!5m2!1spt-BR!2sbr"
+                        width="590" height="350" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Mapa do estúdio Taboão da Serra"></iframe>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0228680505365!2d-46.6707329!3d-23.603512799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce512ce70f8dcd%3A0x76af7899ed942248!2sOriginal%20Sp%20Tattoo%20Moema!5e0!3m2!1spt-BR!2sbr!4v1718120375455!5m2!1spt-BR!2sbr"
+                        width="590" height="350" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Mapa do estúdio Moema"></iframe>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        const filterButtons = document.querySelectorAll(".filtro-btn");
+        const artistCards = document.querySelectorAll("#funcionarios .artista");
+        const funcionarios = document.querySelector("#funcionarios");
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const category = button.getAttribute("data-category");
+                if (category === "body-piercer") {
+                    funcionarios.style.gap = "0px";
+                    funcionarios.style.display = "flex"
+                } else {
+                    funcionarios.style.gap = "";
+                    funcionarios.style.display = "grid"
+                }
+
+                artistCards.forEach(card => {
+                    if (category === "all") {
+                        card.style.display = "flex";
+                    } else {
+                        if (card.classList.contains(category)) {
+                            card.style.display = "flex";
+                        } else {
+                            card.style.display = "none";
+                        }
+                    }
+                });
+            });
+        });
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

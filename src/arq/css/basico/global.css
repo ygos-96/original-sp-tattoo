@@ -1,0 +1,47 @@
+.saiba-mais-btn{
+    border-bottom: 2px solid #700000;
+    width: 85px;
+}
+
+.menu-mobile {
+    position: fixed;
+    bottom: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top: 2px solid #700000;
+    display: none !important;
+}
+
+.menu-mobile ul li.nav-item-centro {
+    border: 2px solid #700000;
+    border-radius: 50%;
+    bottom: 45px;
+    position: fixed;
+
+}
+
+@media (max-width:600px) {
+    .menu-mobile {
+        display: flex !important;
+        z-index: 99999;
+    }
+
+    .menu-desk {
+        display: none !important;
+
+    }
+}
+
+@media (max-width:400px) {
+    
+    .menu-mobile .nav-item img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .menu-mobile .nav-item-centro img {
+        width: 50px;
+        height: 50px;
+    }
+    
+}
