@@ -2,7 +2,7 @@
   text-decoration: none;
 }
 .servicos-conteudo {
-  background-image: url(../../img/fundo-servicos.png);
+  background-image: url(../../img/backgrounds/fundo-servicos.png);
   background-position: center center;
   background-size: contain;
   height: 150px;
@@ -125,6 +125,10 @@ footer p {
 
       .card-artista p {
         font-size: 14px !important;
+      }
+
+      .galeria video{
+        width: 200px !important;
       }
 
 }
