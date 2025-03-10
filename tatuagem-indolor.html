@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tatuagem Indolor - Original SP Tattoo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/arq/css/basico/reset.css">
+    <link rel="stylesheet" href="src/arq/css/basico/global.css">
+    <link rel="stylesheet" href="src/arq/css/basico/buid.css">
+    <link rel="stylesheet" href="src/arq/css/servicos.css">
+    <style>
+        .principal {
+            background-image: url(src/img/backgrounds/fundo-pagina-servicos.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            height: 90vh;
+            min-height: 100%;
+            margin-top: 50px;
+        }
+
+        .principal h1 {
+            font-size: 35px;
+        }
+
+        .menu-desk {
+            position: fixed;
+            top: 0;
+            z-index: 99999;
+        }
+
+        @media (max-width:770px) {
+
+            .principal {
+                height: 50vh;
+            }
+
+            .principal h1 {
+                font-size: 18px;
+                margin-bottom: 20px !important;
+            }
+
+            .principal img {
+                max-width: 400px;
+                width: 280px;
+            }
+        }
+
+        @media (max-width:600px) {
+            .principal {
+                height: 100vh;
+                padding-bottom: 100px;
+                margin-top: 0px;
+            }
+
+            .principal img {
+                width: 350px;
+                margin-bottom: 20px;
+            }
+
+            .principal h1 {
+                font-size: 25px;
+                margin-bottom: 30px !important;
+            }
+
+        }
+
+        @media (max-width:400px) {
+            .principal img {
+                margin-bottom: 20px;
+            }
+
+            .principal h1 {
+                font-size: 22px;
+                margin-bottom: 30px !important;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="cor-de-fundo text-light">
+    <header class="d-flex flex-column justify-content-center align-items-center p-1">
+        <nav class="menu-desk cor-de-fundo d-flex w-100">
+            <ul class="nav d-flex justify-content-center w-100 align-items-center">
+                <li class="nav-item mr-4"><img src="src/img/icones/logo-original/Logo_Branco-mob.webp" width="75"
+                        height="75" alt="Logo da Original SP Tattoo"></li>
+                <li class="nav-item "><a class="nav-link fonte-principal ml-4" href="#">Sobre Nós</a></li>
+                <li class="nav-item"><a class="nav-link fonte-principal" href="#">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link fonte-principal" href="#">Localização</a></li>
+            </ul>
+        </nav>
+        <div class="menu-mobile d-flex w-100 cor-de-fundo">
+            <ul class="nav position-relative d-flex w-100 align-items-center justify-content-around py-2 ">
+                <li class="nav-item d-flex flex-column justify-content-center aling-items-center">
+                    <a href="sobre-nos.html">
+                        <img src="src/img/icones/menu-mobile/estudio-de-tatuagem.png" width="30" height="30"
+                            alt="icone de um estúdio de tatuagem" class="m-auto">
+                        <span class="fs-10 fonte-principal">Sobre Nós</span>
+                    </a>
+                </li>
+                <li class="nav-item d-flex flex-column justify-content-center aling-items-center">
+                    <a href="servicos.html">
+                        <img src="src/img/icones/menu-mobile/tatuagem.png" width="30" height="30"
+                            alt="icone de uma maquina de fazer tatuagem" class="m-auto">
+                        <span class="fs-10 fonte-principal">Serviços</span>
+                    </a>
+
+                </li>
+                <li
+                    class="nav-item nav-item-centro cor-de-fundo p-1 d-flex flex-column justify-content-center aling-items-center">
+                    <a href="#home">
+                        <img src="src/img/icones/logo-original/Logo-branco.webp" width="50" height="50"
+                            alt="icone de um estúdio de tatuagem" class="m-auto">
+                    </a>
+
+                </li>
+                <li class="nav-item d-flex flex-column justify-content-center aling-items-center">
+                    <a href="localizacao.html">
+                        <img src="src/img/icones/menu-mobile/mapa.png" width="30" height="30"
+                            alt="icone de um estúdio de tatuagem" class="m-auto">
+                        <span class="fs-10 fonte-principal">Localização</span>
+                    </a>
+                </li>
+                <li class="nav-item d-flex flex-column justify-content-center aling-items-center">
+                    <a href=""></a>
+                    <img src="src/img/icones/menu-mobile/orcamentacao.png" width="30" height="30"
+                        alt="icone de um estúdio de tatuagem" class="m-auto">
+                    <span class="fs-10 fonte-principal">Orçamento</span>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+    <main>
+        <section class="principal mb-sessao d-flex flex-column justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="src/img/icones/logo-original/logo-vermelho.png" alt="Logo da Original SP Tattoo" width="450"
+                    height="450" class="img-fluid mb-4">
+                <button class="btn-secundario">Solicitar orçamento</button>
+            </div>
+        </section>
+        <section class="etapas d-flex flex-column  justify-content-center container mb-sessao">
+            <span class="marcacao mb-2">.</span>
+            <h2 class="ml-2 titulo-de-sessao fonte-principal mb-1">Sua chance de dar um novo significado a uma tatuagem
+                antiga</h2>
+            <p class="subtitulo-de-sessao ml-2">Cobertura</p>
+
+            <h3 class="titulo-de-sessao fonte-principal my-5 text-center">Conheça todas as etapas</h3>
+            <div class="conteudo-etapas">
+                <div class="my-5 px-3">
+                    <img src="src/img/icones/etapas/primeiro-contato.png" alt="Icone de primeiro contato" class="mb-3"
+                        width="70" height="70">
+                    <h2 class="fonte-titulo fs-45">primeiro contato</h2>
+                    <p class="fonte-principal fs-25">Nossa equipe especializada irá entender sua demanda e apresentar as melhores soluções para você.</p>
+                </div>
+                <div class="d-flex flex-column justify-content-end align-items-end my-5 px-3">
+                    <img src="src/img/icones/etapas/projeto.png" alt="Icone de projeto" class="mb-3" width="70"
+                        height="70">
+                    <h2 class="fonte-titulo fs-45">projeto</h2>
+                    <p class="fonte-principal fs-25 text-right">Você e o tatuador vão definir como a arte ficará, tamanho e local do corpo que melhor se adequa.</p>
+                </div>
+                <div class="my-5 px-3">
+                    <img src="src/img/icones/etapas/exame.png" alt="Icone de exame" class="mb-3"
+                        width="70" height="70">
+                    <h2 class="fonte-titulo fs-45">Exame</h2>
+                    <p class="fonte-principal fs-25">Agora é hora dos exames para garantir que o procedimento será feito com máxima segurança</p>
+                </div>
+                <div class="d-flex flex-column justify-content-end align-items-end my-5 px-3">
+                    <img src="src/img/icones/etapas/agendamento.png" alt="Icone de agendamento" class="mb-3" width="70"
+                        height="70">
+                    <h2 class="fonte-titulo fs-45">agendamento</h2>
+                    <p class="fonte-principal fs-25 text-right">Pronto! Apenas precisa escolher o dia e a hora para fazer a tatuagem dos seus sonhos </p>
+                </div>
+            </div>
+        
+        </section>
+        <section class="galeria justify-content-center align-items-center mt-sessao mb-sessao mx-auto">
+            <img src="src/img/tatuagem-indolor/galeria/clinica1.png" data-toggle="modal" data-target="#imageModal"
+                class="img-fluid galeria-item" width="400" height="400" alt="">
+            <img src="src/img/tatuagem-indolor/galeria/clinica2.png" data-toggle="modal" data-target="#imageModal"
+                class="img-fluid galeria-item" width="400" height="400" alt="">
+            <img src="src/img/tatuagem-indolor/galeria/clinica3.png" data-toggle="modal" data-target="#imageModal"
+                class="img-fluid galeria-item" width="400" height="400" alt="">
+            <img src="src/img/tatuagem-indolor/galeria/clinica4.png" data-toggle="modal" data-target="#imageModal"
+                class="img-fluid galeria-item" width="400" height="400" alt="">
+            <img src="src/img/tatuagem-indolor/galeria/clinica5.png" data-toggle="modal" data-target="#imageModal"
+                class="img-fluid galeria-item" width="400" height="400" alt="">
+            <img src="src/img/tatuagem-indolor/galeria/clinica6.png" data-toggle="modal" data-target="#imageModal"
+                class="img-fluid galeria-item" width="400" height="400" alt="">
+            <img src="src/img/tatuagem-indolor/galeria/clinica7.png" data-toggle="modal" data-target="#imageModal"
+                class="img-fluid galeria-item" width="400" height="400" alt="">
+            <img src="src/img/tatuagem-indolor/galeria/clinica8.png" data-toggle="modal" data-target="#imageModal"
+                class="img-fluid galeria-item" width="400" height="400" alt="">
+            <img src="src/img/tatuagem-indolor/galeria/clinica9.png" data-toggle="modal" data-target="#imageModal"
+                class="img-fluid galeria-item" width="400" height="400" alt="">
+            <img src="src/img/tatuagem-indolor/galeria/clinica10.png" data-toggle="modal" data-target="#imageModal"
+                class="img-fluid galeria-item" width="400" height="400" alt="">
+            <img src="src/img/tatuagem-indolor/galeria/clinica11.png" data-toggle="modal" data-target="#imageModal"
+                class="img-fluid galeria-item" width="400" height="400" alt="">
+            <video src="src/img/tatuagem-indolor/galeria/clinica1.mp4"
+                poster="src/img/tatuagem-indolor/galeria/thumbnail-clinica-1.png" data-toggle="modal"
+                data-target="#videoModal" class="img-fluid galeria-item" width="400" height="400" alt=""></video>
+            <video src="src/img/tatuagem-indolor/galeria/clinica2.mp4"
+                poster="src/img/tatuagem-indolor/galeria/thumbnail-clinica-2.png" data-toggle="modal"
+                data-target="#videoModal" class="img-fluid galeria-item" width="400" height="400" alt=""></video>
+            <video src="src/img/tatuagem-indolor/galeria/clinica3.mp4"
+                poster="src/img/tatuagem-indolor/galeria/thumbnail-clinica-3.png" data-toggle="modal"
+                data-target="#videoModal" class="img-fluid galeria-item" width="400" height="400" alt=""></video>
+        </section>
+        <article class="texto-conteudo container fonte-principal fs-20 my-5">
+            Quer um piercing estiloso e seguro? No nosso estúdio, somos especialistas em piercings de alta qualidade. Com uma equipe experiente e utilizando materiais de primeira linha, garantimos um procedimento seguro e higiênico. Seja no nariz, orelha, umbigo ou qualquer outra área, cuidamos de cada detalhe para que você saia com um piercing incrível e totalmente satisfeito. Nosso compromisso é com sua segurança e estilo. Venha nos visitar e adicione um toque de atitude ao seu visual com nossos piercings profissionais!
+        </article>
+        <section class="contato container d-flex flex-column mb-sessao">
+            <span class="marcacao mb-2">.</span>
+            <h2 class="ml-2 titulo-de-sessao fonte-principal mb-1">Pronto para dar vida à sua ideia?</h2>
+            <p class="subtitulo-de-sessao ml-2">Contato</p>
+            <div class="container d-flex flex-column justify-content-center align-items-center my-5">
+                <h3 class="fonte-principal titulo-de-sessao text-center col-10">Conte-nos sobre sua ideia de tatuagem e
+                    receba um orçamento personalizado hoje mesmo.</h3>
+                <button class="btn-secundario mt-4">Solicitar orçamento</button>
+            </div>
+
+        </section>
+    </main>
+
+       <!-- Modal de Imagem galeria -->
+       <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+       aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered" role="document">
+           <div class="modal-content bg-transparent">
+               <div class="modal-body text-center">
+                   <div class="container-fluid d-flex align-items-center mb-3">
+                       <div class="cor-de-fundo mr-2">
+                           <img src="src/img/icones/logo-original/foto-instagram.png" width="40" height="40"
+                               class="rounded-circle" alt="">
+                       </div>
+                       <p class="text-light mb-0 fonte-principal">original_sptattoo</p>
+                   </div>
+                   <img id="modalImage" class="img-fluid modal-image" width="100%" height="800" src=""
+                       alt="Imagem Grande">
+                   <div class="d-flex aling-items-center justify-content-around mt-3">
+                       <i class="far fa-heart item-insta"></i>
+                       <i class="far fa-comment item-insta"></i>
+                       <i class="far fa-paper-plane item-insta"></i>
+                       <i class="fas fa-ellipsis-v item-insta"></i>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Modal de Video galeria -->
+   <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+       aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered" role="document">
+           <div class="modal-content bg-transparent">
+               <div class="modal-body text-center">
+                   <div class="container-fluid d-flex align-items-center mb-3">
+                       <div class="cor-de-fundo mr-2">
+                           <img src="src/img/icones/logo-original/foto-instagram.png" width="40" height="40"
+                               class="rounded-circle" alt="">
+                       </div>
+                       <p class="text-light mb-0 fonte-principal">original_sptattoo</p>
+                   </div>
+                   <video id="modalVideo" src="" width="400" height="600" controls></video>
+                   <div class="d-flex aling-items-center justify-content-around mt-3">
+                       <i class="far fa-heart item-insta"></i>
+                       <i class="far fa-comment item-insta"></i>
+                       <i class="far fa-paper-plane item-insta"></i>
+                       <i class="fas fa-ellipsis-v item-insta"></i>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="src/arq/js/modal-galeria.js"></script>
+</body>
+
+</html>

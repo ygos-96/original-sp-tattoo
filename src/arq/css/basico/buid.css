@@ -18,6 +18,11 @@
   src: url(../../../font/BebasNeue-Regular.otf);
 }
 
+@font-face {
+  font-family: 'Bohemy';
+  src: url(../../../font/Bohemy.otf);
+}
+
 .cor-de-fundo {
   background-color: var(--cor-de-fundo);
 }
@@ -56,7 +61,7 @@
   width: 245px;
   height: 45px;
   border-radius: 8px;
-  font-weight: bold;
+  font-weight: 400;
   cursor: pointer;
 }
 

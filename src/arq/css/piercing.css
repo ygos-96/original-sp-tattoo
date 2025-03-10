@@ -1,0 +1,51 @@
+
+.artista .informacoes h3,
+.artista h3{
+    background-color: #700000;
+    font-family: "Bohemy", sans-serif;
+    max-width: 400px;
+    border-radius: 35px;
+}
+
+.artista .informacoes h3{
+    display: block !important;
+}
+.artista h3{
+   min-width: 280px;
+   display: none !important;
+}
+
+.informacoes .itens i{
+    color: #700000;
+}
+
+@media (max-width:1000px) {
+    .artista{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .col-6{
+        min-width: 100% !important;
+    }
+    .artista .informacoes{
+        align-items: center;
+        text-align: center;
+    }
+    .artista .informacoes h3{
+        display: none !important;
+    }
+    .artista h3{
+       display: block !important;
+    }
+    .artista img {
+        width: 500px;
+    }
+    .artista .informacoes div{
+        justify-content: center !important;
+    }
+
+
+    .artista .informacoes .itens{
+        font-size: 13px !important;
+    }
+}

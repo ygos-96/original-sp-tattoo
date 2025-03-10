@@ -1,0 +1,65 @@
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  max-width: 940px;
+}
+
+.galeria img {
+    cursor: pointer;
+}
+
+.modal-body {
+  padding: 20px 0px 20px 0px;
+  border-radius: 10px;
+  background-color: rgb(5, 5, 5);
+}
+
+.modal-body .cor-de-fundo {
+  border-radius: 50%;
+  border: 2px solid #1cd14f;
+  padding: 1px;
+}
+
+.modal-body .item-insta {
+  font-size: 1.3rem;
+}
+
+
+
+@media (max-width: 600px) {
+  .galeria {
+    gap: 2px;
+    width: 95vw;
+  }
+  .conteudo-etapas img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .conteudo-etapas h2 {
+    font-size: 1.6rem !important;
+  }
+
+  .conteudo-etapas p,
+  .texto-conteudo {
+    font-size: 1.3rem !important;
+  }
+
+  .mb-sessao {
+    margin-bottom: 110px;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal-body {
+    width: 320px;
+    margin: auto;
+  }
+  .modal-body .cor-de-fundo img {
+    width: 35px;
+  }
+  .modal-body .item-insta {
+    font-size: 1.1rem;
+  }
+}
