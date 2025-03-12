@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bem Vindo - Original SP Tattoo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/arq/css/basico/reset.css">
+    <link rel="stylesheet" href="src/arq/css/basico/global.css">
+    <link rel="stylesheet" href="src/arq/css/basico/buid.css">
+    <link rel="stylesheet" href="src/arq/css/artista.css">
+    <style>
+        body {
+            background-color: #0D0000;
+        }
+
+        .principal {
+            height: 100vh;
+            min-height: 100%;
+        }
+
+        .principal img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .info-artista {
+            width: 500px;
+            margin-inline: 20px;
+            position: absolute;
+        }
+
+        @media (max-width:770px) {
+            .principal h1 {
+                font-size: 18px;
+                margin-bottom: 20px !important;
+            }
+
+            .principal img {
+                object-position: top;
+            }
+        }
+
+        @media (max-width:600px) {
+            .principal h1 {
+                font-size: 25px;
+
+            }
+
+            .principal img {
+                object-position: center;
+            }
+        }
+
+        @media (max-width:400px) {
+            .principal h1 {
+                font-size: 22px;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body class="text-light">
+    <header>
+        <section class="principal d-flex flex-column justify-content-center position-relative">
+            <picture>
+                <!-- Para telas menores que 768px -->
+                <source srcset="src/img/LP-artistas/artistas/tuzinho-mob.png" media="(max-width: 768px)">
+                <img src="src/img/LP-artistas/artistas/tuzinho.png" width="500" height="200" alt="Tuzinho">
+            </picture>
+
+            <div class="info-artista d-flex flex-column justify-content-center align-items-center text-center">
+                <h1 class="fonte-titulo text-white fs-45">Olá, eu sou o </h1>
+                <h2 class="fonte-artista">Tuzinho</h2>
+                <h3 class="fonte-titulo mb-5">tatuador a <span style="color: var(--btn-cor-texto-artista);">30
+                        anos</span></h3>
+                <button class="btn-artista">Solicitar orçamento</button>
+            </div>
+
+            <div class="img-logo position-absolute">
+                <img src="src/img/icones/logo-original/Logo-branco.webp" alt="">
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <section class="artista mt-sessao container d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                <h2 class="titulo-artista mb-4">Tatuador profissional e renomado </h2>
+                <img src="src/img/LP-artistas/perfil/tuzinho-perfil.png" width="505" height="708" img-fluid"
+                    alt="Foto de perfil do Tuzinho">
+            </div>
+
+            <div>
+                <h2 class="titulo-artista mb-4">Tatuador profissional e renomado </h2>
+                <p class="fonte-principal my-4">À frente do estúdio está Tuzinho Tattoo, um dos tatuadores mais
+                    renomados do país. Com mais de 30 anos de experiência, Tuzinho se especializou no realismo e em
+                    técnicas avançadas de tatuagem, sendo reconhecido por seu talento e precisão. Sua trajetória inclui
+                    a conquista de inúmeros prêmios em convenções ao redor do mundo, além de ter formado milhares de
+                    tatuadores através da Tuzinho Academy, sua plataforma de ensino dedicada ao aprimoramento da arte da
+                    tatuagem</p>
+                <h3 class="fonte-artista fs-70 ">Tuzinho</h3>
+                <button class="btn-artista">Solicitar orçamento</button>
+            </div>
+        </section>
+
+        <section class="contato container d-flex flex-column mt-sessao mb-sessao">
+            <span class="marcacao mb-2">.</span>
+            <h2 class="ml-2 titulo-de-sessao fonte-principal mb-1">Pronto para dar vida à sua ideia?</h2>
+            <p class="subtitulo-de-sessao ml-2">Contato</p>
+            <div class="container d-flex flex-column justify-content-center align-items-center my-5">
+                <h3 class="fonte-principal titulo-de-sessao text-center col-10">Conte-nos sobre sua ideia de tatuagem e
+                    receba um orçamento personalizado hoje mesmo.</h3>
+                <button class="btn-secundario mt-4">Solicitar orçamento</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="container d-flex aling-items-center fonte-principal">
+        <img src="src/img/icones/logo-original/Logo-branco.webp" width="80" height="80" alt="">
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+body {
+  background-color: #0d0000;
+}
+.marcacao {
+  background-color: #0d0000;
+}
+
+.img-logo {
+  bottom: 50px;
+  right: 50px;
+}
+
+.img-logo img {
+  height: 100px !important;
+  width: 100px !important;
+}
+
+.artista div:first-of-type h2 {
+  display: none;
+}
+.titulo-artista {
+  font-family: 'Berkshire Swash', serif;
+  font-size: 3rem;
+}
+
+@media (max-width: 1500px) {
+  .artista {
+    flex-direction: column;
+  }
+
+  .artista div:first-of-type h2 {
+    display: flex;
+  }
+
+  .artista div:nth-of-type(2) h2 {
+    display: none;
+  }
+}
+
+@media (max-width: 970px) {
+  .img-logo {
+    bottom: 100px;
+  }
+  .artista img {
+    width: 400px;
+  }
+}
+@media (max-width: 770px) {
+  .fonte-titulo:nth-child(1) {
+    font-size: 2.8rem !important;
+  }
+  .info-artista {
+    width: 100% !important;
+    margin-inline: auto !important;
+  }
+  .img-logo {
+    bottom: 70px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .titulo-artista {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .fonte-artista {
+    font-size: 7.5rem;
+    margin-bottom: 1rem !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .fonte-artista {
+    font-size: 7.5rem;
+    margin-bottom: 1rem !important;
+  }
+
+  .img-logo {
+    bottom: 50px;
+  }
+  
+  .img-logo img {
+    height: 80px !important;
+    width: 80px !important;
+  }
+  .titulo-artista {
+    font-size: 1.7rem;
+  }
+}
