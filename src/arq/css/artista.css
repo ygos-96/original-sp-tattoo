@@ -6,7 +6,7 @@ body {
 }
 
 .img-logo {
-  bottom: 50px;
+  bottom: 150px;
   right: 50px;
 }
 
@@ -21,6 +21,20 @@ body {
 .titulo-artista {
   font-family: 'Berkshire Swash', serif;
   font-size: 3rem;
+}
+
+.habilidades {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 10px;
+}
+
+.card-skill {
+  width: 250px;
+  height: 250px;
+  background-color: #1e0000;
+  box-shadow: 5px 2px #fff;
+  border-radius: 10px;
 }
 
 @media (max-width: 1500px) {
@@ -38,13 +52,22 @@ body {
 }
 
 @media (max-width: 970px) {
-  .img-logo {
-    bottom: 100px;
-  }
   .artista img {
     width: 400px;
   }
+
+  .artista .col-4,
+  .artista .col-8 {
+    width: 100% !important;
+    min-width: 100%;
+  }
+
+  .habilidades {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
 }
+
 @media (max-width: 770px) {
   .fonte-titulo:nth-child(1) {
     font-size: 2.8rem !important;
@@ -60,9 +83,14 @@ body {
     justify-content: center;
     width: 100%;
   }
-
   .titulo-artista {
     font-size: 2rem;
+  }
+  .header-sessao .fonte-titulo {
+    font-size: 13px !important;
+  }
+  .habilidades {
+    gap: 20px;
   }
 }
 
@@ -70,6 +98,24 @@ body {
   .fonte-artista {
     font-size: 7.5rem;
     margin-bottom: 1rem !important;
+  }
+
+  .card-skill {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card-skill img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card-skill h2 {
+    font-size: 11px !important;
+  }
+
+  .card-skill p {
+    display: none;
   }
 }
 
@@ -82,7 +128,7 @@ body {
   .img-logo {
     bottom: 50px;
   }
-  
+
   .img-logo img {
     height: 80px !important;
     width: 80px !important;

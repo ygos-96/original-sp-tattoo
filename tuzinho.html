@@ -15,10 +15,6 @@
     <link rel="stylesheet" href="src/arq/css/basico/buid.css">
     <link rel="stylesheet" href="src/arq/css/artista.css">
     <style>
-        body {
-            background-color: #0D0000;
-        }
-
         .principal {
             height: 100vh;
             min-height: 100%;
@@ -35,6 +31,33 @@
             width: 500px;
             margin-inline: 20px;
             position: absolute;
+        }
+
+        .efeito {
+            height: 180px;
+            width: 100%;
+            bottom: -2px;
+            right: 0;
+            left: 0;
+        }
+
+        .efeito .triangulo-d,
+        .efeito .triangulo-e {
+            height: 180px;
+            width: 50vw;
+            background-color: #0D0000;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+
+        @media (max-width: 970px) {
+            .efeito {
+                height: 150px;
+            }
+
+            .efeito .triangulo-d,
+            .efeito .triangulo-e {
+                height: 150px;
+            }
         }
 
         @media (max-width:770px) {
@@ -56,6 +79,17 @@
 
             .principal img {
                 object-position: center;
+            }
+
+            .efeito {
+                height: 70px;
+
+            }
+
+            .efeito .triangulo-d,
+            .efeito .triangulo-e {
+                height: 70px;
+
             }
         }
 
@@ -89,19 +123,24 @@
             <div class="img-logo position-absolute">
                 <img src="src/img/icones/logo-original/Logo-branco.webp" alt="">
             </div>
+            <div class="efeito d-flex justify-content-center position-absolute">
+                <div class="triangulo-d">
+                </div>
+                <div class="triangulo-e">
+                </div>
+            </div>
         </section>
     </header>
 
     <main>
-
         <section class="artista mt-sessao container d-flex justify-content-center align-items-center">
-            <div class="d-flex flex-column justify-content-center align-items-center text-center">
+            <div class="d-flex flex-column justify-content-center align-items-center text-center col-4">
                 <h2 class="titulo-artista mb-4">Tatuador profissional e renomado </h2>
                 <img src="src/img/LP-artistas/perfil/tuzinho-perfil.png" width="505" height="708" img-fluid"
                     alt="Foto de perfil do Tuzinho">
             </div>
 
-            <div>
+            <div class="col-8">
                 <h2 class="titulo-artista mb-4">Tatuador profissional e renomado </h2>
                 <p class="fonte-principal my-4">À frente do estúdio está Tuzinho Tattoo, um dos tatuadores mais
                     renomados do país. Com mais de 30 anos de experiência, Tuzinho se especializou no realismo e em
@@ -112,6 +151,38 @@
                 <h3 class="fonte-artista fs-70 ">Tuzinho</h3>
                 <button class="btn-artista">Solicitar orçamento</button>
             </div>
+        </section>
+        <section class="d-flex flex-column justify-content-center align-items-center mt-sessao mb-sessao">
+            <div class="header-sessao d-flex flex-column justify-content-center aling-items-center mb-5">
+                <span class="fonte-titulo fs-12 text-center">minhas</span>
+                <h2 class="fonte-artista fs-45">Especialidades</h2>
+            </div>
+            <div class="habilidades justify-content-center align-items-center">
+                <div class="card-skill d-flex flex-column justify-content-center align-items-center">
+                    <img src="src/img/icones/especialidades/realismo-colorido.png" class="mb-2" width="60" height="60"
+                        alt="icone de realismo colorido">
+                    <h2 class="fonte-titulo text-light fs-15">Realismo colorido</h2>
+                    <p class="fonte-principal text-light fs-12 text-center px-3">A tatuagem realista colorida é uma
+                        técnica que busca reproduzir imagens com alto nível de detalhe e profundidade, utilizando cores
+                        vibrantes para criar um efeito tridimensional e realista na pele.</p>
+                </div>
+                <div class="card-skill d-flex flex-column justify-content-center align-items-center">
+                    <img src="src/img/icones/especialidades/realismo-preto-e-cinza.png" class="mb-2" width="60"
+                        height="60" alt="icone de realismo colorido">
+                    <h2 class="fonte-titulo text-light fs-15">realismo preto e cinza</h2>
+                    <p class="fonte-principal text-light fs-12 text-center px-3">A tatuagem de realismo preto e cinza
+                        utiliza apenas tons de preto e cinza para criar profundidade, contraste e sombreamento,
+                        resultando em imagens detalhadas e realistas com um efeito tridimensional.</p>
+                </div>
+                <div class="card-skill d-flex flex-column justify-content-center align-items-center">
+                    <img src="src/img/icones/especialidades/realismo.png" class="mb-2" width="60"
+                        height="60" alt="icone de realismo colorido">
+                    <h2 class="fonte-titulo text-light fs-15">realismo</h2>
+                    <p class="fonte-principal text-light fs-12 text-center px-3">A tatuagem de realismo é um estilo que busca reproduzir imagens com alta fidelidade à realidade, utilizando sombreamento, contraste e profundidade para criar um efeito tridimensional na pele.</p>
+                </div>
+            </div>
+
+
         </section>
 
         <section class="contato container d-flex flex-column mt-sessao mb-sessao">
