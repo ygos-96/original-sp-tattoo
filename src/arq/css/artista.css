@@ -37,6 +37,10 @@ body {
   border-radius: 10px;
 }
 
+.header-sessao {
+  max-width: 700px;
+}
+
 @media (max-width: 1500px) {
   .artista {
     flex-direction: column;
@@ -86,8 +90,17 @@ body {
   .titulo-artista {
     font-size: 2rem;
   }
+
+  .header-sessao {
+    max-width: 500px;
+  }
+
   .header-sessao .fonte-titulo {
     font-size: 13px !important;
+  }
+
+  .header-sessao p {
+    font-size: 16px !important;
   }
   .habilidades {
     gap: 20px;

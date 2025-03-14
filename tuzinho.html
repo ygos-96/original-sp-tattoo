@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="src/arq/css/basico/reset.css">
     <link rel="stylesheet" href="src/arq/css/basico/global.css">
     <link rel="stylesheet" href="src/arq/css/basico/buid.css">
+    <link rel="stylesheet" href="src/arq/css/container/carrossel.css">
     <link rel="stylesheet" href="src/arq/css/artista.css">
     <style>
         .principal {
@@ -154,8 +155,8 @@
         </section>
         <section class="d-flex flex-column justify-content-center align-items-center mt-sessao mb-sessao">
             <div class="header-sessao d-flex flex-column justify-content-center aling-items-center mb-5">
-                <span class="fonte-titulo fs-12 text-center">minhas</span>
-                <h2 class="fonte-artista fs-45">Especialidades</h2>
+                <span class="fonte-titulo fs-16 text-center">minhas</span>
+                <h2 class="fonte-artista fs-50">Especialidades</h2>
             </div>
             <div class="habilidades justify-content-center align-items-center">
                 <div class="card-skill d-flex flex-column justify-content-center align-items-center">
@@ -175,16 +176,45 @@
                         resultando em imagens detalhadas e realistas com um efeito tridimensional.</p>
                 </div>
                 <div class="card-skill d-flex flex-column justify-content-center align-items-center">
-                    <img src="src/img/icones/especialidades/realismo.png" class="mb-2" width="60"
-                        height="60" alt="icone de realismo colorido">
+                    <img src="src/img/icones/especialidades/realismo.png" class="mb-2" width="60" height="60"
+                        alt="icone de realismo colorido">
                     <h2 class="fonte-titulo text-light fs-15">realismo</h2>
-                    <p class="fonte-principal text-light fs-12 text-center px-3">A tatuagem de realismo é um estilo que busca reproduzir imagens com alta fidelidade à realidade, utilizando sombreamento, contraste e profundidade para criar um efeito tridimensional na pele.</p>
+                    <p class="fonte-principal text-light fs-12 text-center px-3">A tatuagem de realismo é um estilo que
+                        busca reproduzir imagens com alta fidelidade à realidade, utilizando sombreamento, contraste e
+                        profundidade para criar um efeito tridimensional na pele.</p>
                 </div>
             </div>
 
 
         </section>
+        <section class="galeria d-flex flex-column justify-content-center align-items-center">
+            <div class="header-sessao d-flex flex-column justify-content-center aling-items-center mb-5">
+                <span class="fonte-titulo fs-16 text-center">meus</span>
+                <h2 class="fonte-artista fs-50 text-center">Trabalhos</h2>
+                <p class="fonte-principal fs-22 text-center my-2">Cada traço, cada sombra, cada detalhe. Descubra as últimas criações de Tuzinho Tattoo e veja por que seu trabalho é referência no realismo.</p>
+            </div>
+            <div class="container">
+                <div class="carousel mx-auto">
+                    <div class="list">
+                        <img class="item" src="src/img/LP-artistas/carrossel/carrossel-tuzinho/1.webp" width="400" height="500" data-target="#imageModal">
+                        <img class="item" src="src/img/LP-artistas/carrossel/carrossel-tuzinho/2.webp" width="400" height="500" data-target="#imageModal">
+                        <img class="item" src="src/img/LP-artistas/carrossel/carrossel-tuzinho/3.webp" width="400" height="500" data-target="#imageModal">
+                        <img class="item" src="src/img/LP-artistas/carrossel/carrossel-tuzinho/4.webp" width="400" height="500" data-target="#imageModal">
+                        <img class="item" src="src/img/LP-artistas/carrossel/carrossel-tuzinho/6.webp" width="400" height="500" data-target="#imageModal">
+                        <img class="item" src="src/img/LP-artistas/carrossel/carrossel-tuzinho/7.webp" width="400" height="500" data-target="#imageModal">
 
+                    </div>
+
+                    <!--next prev button-->
+                    <div class="arrows">
+                        <button class="prev">
+                            < </button>
+                                <button class="next">></button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
         <section class="contato container d-flex flex-column mt-sessao mb-sessao">
             <span class="marcacao mb-2">.</span>
             <h2 class="ml-2 titulo-de-sessao fonte-principal mb-1">Pronto para dar vida à sua ideia?</h2>
@@ -198,7 +228,7 @@
         </section>
     </main>
 
-    <footer class="container d-flex aling-items-center fonte-principal">
+    <footer class="container d-flex justify-content-center aling-items-center my-5">
         <img src="src/img/icones/logo-original/Logo-branco.webp" width="80" height="80" alt="">
     </footer>
 
@@ -212,6 +242,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="src/arq/js/container/carrossel.js"></script>
 </body>
 
 </html>
